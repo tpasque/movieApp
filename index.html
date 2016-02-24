@@ -1,10 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="myApp">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+    <link rel="stylesheet" href="css/main.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="css/about.css" media="screen" title="no title" charset="utf-8">
+    <title>Angular IMDb Application</title>
   </head>
-  <body>
+  <body ng-controller="MainController" ng-cloak>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="/#/">Home</a></li>
+          <li><a href="/#/about">About</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div ng-view>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-route.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/controllers/main_controller.js"></script>
+    <script type="text/javascript" src="js/controllers/about_controller.js"></script>
 
   </body>
 </html>
