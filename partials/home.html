@@ -1,8 +1,26 @@
 <div class="searchDiv">
   <h1>Angular OMDb API Search</h1>
   <h2>Enter a movie by title.</h2>
-  <form class="searchForm" ng-submit="">
-    <input class="searchBar" type="text" ng-model="searchBar" placeholder="enter movie title here">
-    <button class="searchButton" type="submit" ng-click="" name="searchButton">Search</button>
+  <form class="searchForm" ng-submit="submitSearch()">
+    <input class="searchBar" type="text" ng-model="search" ng-model-options="{ debounce: 800 }" placeholder="enter movie title here">
+    <!-- <button class="searchButton" type="submit" ng-click="" name="searchButton">Search</button> -->
+    <input class="searchButton" type="submit" name="name" value="Search">
   </form>
+</div>
+
+<div class="results">
+  <div class="moviePost" ng-repeat="movie in movieData | orderBy: movie.Year:true">
+    <!-- <img class="movieImage" src="{{movie.Poster}}" alt="image not found"/> -->
+    <p><a href="/#/{{movie.imdbID}}/show" ng-click="individualMovieSearch(movie.imdbID)">Title: {{movie.Title}}</a></p>
+    <p>Year: {{movie.Year}}</p>
+    <p>Type: {{movie.Type}}</p>
+  </div>
+</div>
+
+<!-- Is this where the ng-include goes for our show page? -->
+
+<!-- ng-click="individualMovieSearch({{movie.imdbID}})" -->
+<!-- href="/#/{{movie.imdbID}}/show" -->
+<div class="">
+  <p>{{idData.Title}}</p>
 </div>
