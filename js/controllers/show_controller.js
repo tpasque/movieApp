@@ -7,7 +7,8 @@ app.controller('ShowController', ['$scope', '$http', '$location', function($scop
       $scope.idData = idData.data
       console.log($scope.idData);
       console.log($scope.idData.Title);
-      $location.path('/#/'+id+'/show');
+      // console.log($scope.idData.);
+      $location.path('/'+id+'/show');
     })
   }
 }]);

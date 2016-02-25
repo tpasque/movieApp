@@ -9,14 +9,14 @@ app.controller('MainController', ['$scope', '$http', '$location', function($scop
     })
   };
 
-  // $scope.individualMovieSearch = function (id) {
-  //   // var id = $scope.movieData.imdbID
-  //   $http.get('http://www.omdbapi.com/?i='+ id).then(function (idData) {
-  //     $scope.idData = idData.data
-  //     console.log($scope.idData);
-  //     console.log($scope.idData.Title);
-  //     $location.path('/#/'+id+'/show')
-  //
-  //   })
-  // }
+  $scope.individualMovieSearch = function (id) {
+    // var id = $scope.movieData.imdbID
+    $http.get('http://www.omdbapi.com/?i='+ id).then(function (idData) {
+      $scope.idData = idData.data
+      console.log($scope.idData);
+      console.log($scope.idData.Title);
+      $location.path('/'+id+'/show')
+
+    })
+  }
 }]);
