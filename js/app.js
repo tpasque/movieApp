@@ -10,9 +10,9 @@ app.config(function($routeProvider, $locationProvider) {
         templateUrl: 'partials/about.html',
         controller: 'AboutController'
       })
-      .when('/:movie_id/show', {
+      .when('/:id/show', {
         templateUrl: 'partials/show.html',
-        controller: 'MainController'
+        controller: 'ShowController'
       })
-      // .otherwise('/');
+      .otherwise('/');
 });

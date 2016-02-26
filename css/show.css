@@ -1,0 +1,16 @@
+.individualMovieContainer{
+  width: 60%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.movieImageContainer{
+  float: left;
+  width: 325px;
+  height: 90vw;
+}
+
+.movieImage{
+  width: 275px;
+  height: 400px;
+}

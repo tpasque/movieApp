@@ -1,41 +1,39 @@
 <div class="individualMovieContainer">
-  <h2>Title: {{idData.Title}}</h2>
-  <img class="movieImage" src="{{idData.Poster}}" alt="image not found"/>
-  <p>Starring: {{idData.Actors}}</p>
-  <p>{{idData.Plot}}</p>
-  <h3>Additional Details</h3>
-  <label for="">Awards</label>
-  <p>{{idData.Awards}}</p>
-  <label for="">Country</label>
-  <p>{{idData.Country}}</p>
-  <label for="">Director</label>
-  <p>{{idData.Director}}</p>
-  <label for="">Genre</label>
-  <p>{{idData.Genre}}</p>
-  <label for="">Language</label>
-  <p>{{idData.Language}}</p>
-  <label for="">Metascore</label>
-  <p>{{idData.Metascore}}</p>
-  <label for="">Rated</label>
-  <p>{{idData.Rated}}</p>
-  <label for="">Released</label>
-  <p>{{idData.Released}}</p>
-  <label for="">Runtime</label>
-  <p>{{idData.Runtime}}</p>
-  <label for="">Title</label>
-  <p>{{idData.Title}}</p>
-  <label for="">Writer</label>
-  <p>{{idData.Writer}}</p>
-  <label for="">Year</label>
-  <p>{{idData.Year}}</p>
-  <label for="">imdbRating</label>
-  <p>{{idData.imdbRating}}</p>
-  <label for="">imdbVotes</label>
-  <p>{{idData.imdbVotes}}</p>
-</div>
-<!--
-<div>
-  <div ng-repeat="movie in idData">
-    <p>Title: {{movie.Title}}</p>
+  <h3>Title: {{idData.Title}}</h3>
+  <div class="movieImageContainer">
+    <img class="movieImage" ng-src={{idData.Poster}} alt="image not found"/>
   </div>
-</div> -->
+  <div class="movieInfoContainer">
+    <p>Starring: {{idData.Actors}}</p>
+    <p>{{idData.Plot}}</p>
+    <h4>Additional Details</h4>
+    <label>Awards</label>
+    <p>{{idData.Awards}}</p>
+    <label>Country</label>
+    <p>{{idData.Country}}</p>
+    <label>Director</label>
+    <p>{{idData.Director}}</p>
+    <label>Genre</label>
+    <p>{{idData.Genre}}</p>
+    <label>Language</label>
+    <p>{{idData.Language}}</p>
+    <label>Metascore</label>
+    <p>{{idData.Metascore}}</p>
+    <label>Rated</label>
+    <p>{{idData.Rated}}</p>
+    <label>Released</label>
+    <p>{{idData.Released}}</p>
+    <label>Runtime</label>
+    <p>{{idData.Runtime}}</p>
+    <label>Title</label>
+    <p>{{idData.Title}}</p>
+    <label>Writer</label>
+    <p>{{idData.Writer}}</p>
+    <label>Year</label>
+    <p>{{idData.Year}}</p>
+    <label>imdbRating</label>
+    <p>{{idData.imdbRating}}</p>
+    <label>imdbVotes</label>
+    <p>{{idData.imdbVotes}}</p>
+  </div>
+</div>

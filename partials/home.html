@@ -6,7 +6,6 @@
     <input class="searchButton" type="submit" name="name" value="Search">
   </form>
 </div>
-
 <div class="results">
   <div class="moviePost" ng-repeat="movie in movieData | orderBy: movie.Year:true">
     <p><a ng-href="/#/{{movie.imdbID}}/show" ng-click="individualMovieSearch(movie.imdbID)">Title: {{movie.Title}}</a></p>
@@ -14,8 +13,3 @@
     <p>Type: {{movie.Type}}</p>
   </div>
 </div>
-
-<!-- Is this where the ng-include goes for our show page? -->
-
-<!-- ng-click="individualMovieSearch({{movie.imdbID}})" -->
-<!-- href="/#/{{movie.imdbID}}/show" -->
