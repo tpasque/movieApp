@@ -10,7 +10,7 @@ app.config(function($routeProvider, $locationProvider) {
         templateUrl: 'partials/about.html',
         controller: 'AboutController'
       })
-      .when('/{{movieData.imdbID}}/show', {
+      .when('/:movie_id/show', {
         templateUrl: 'partials/show.html',
         controller: 'MainController'
       })

@@ -52,10 +52,12 @@ h2{
   border: 1px solid gray;
   width: 40%;
   float: left;
-  margin: 5px;
+  margin: 1vw;
   text-align:center;
   border-radius: 5px 5px 5px 5px;
   color: #1F81FA;
+  position: relative;
+  left: 6vw;
 }
 
 .movieImage{
