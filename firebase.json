@@ -1,0 +1,9 @@
+{
+  "firebase": "angularmovieomdb",
+  "public": ".",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}
