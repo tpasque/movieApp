@@ -6,7 +6,7 @@ When you search a movie, the top 10 responses for that movie will be returned.  
 
 #Website Live URL
 
-https://angularmovieomdb.firebaseapp.com/
+
 
 #Deploying on your local environment
 
